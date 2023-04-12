@@ -1,145 +1,39 @@
 {
   "alunos": [
     {
-      "nome": "Jorge",
-      "nota": 10
-    },
-    {
+      "id": 1,
       "nome": "Joao",
       "nota": 2
     },
     {
-      "nome": "joao ",
-      "nota": "2"
+      "id": 3,
+      "nome": "awdadaw",
+      "nota": "32"
     },
     {
-      "nome": "joao ",
-      "nota": "2"
+      "id": 4,
+      "nome": "efefefsef",
+      "nota": "2332"
     },
     {
-      "nome": "awd",
-      "nota": "3"
+      "id": 5,
+      "nome": "awdad",
+      "nota": "3232"
     },
     {
-      "nome": "awd",
-      "nota": "3"
+      "id": 6,
+      "nome": "awdawd",
+      "nota": "32323"
     },
     {
-      "nome": "erick",
-      "nota": "21"
+      "id": 7,
+      "nome": "awdadadawdadaw",
+      "nota": "34423232"
     },
     {
-      "nome": "awd",
-      "nota": "1"
-    },
-    {
-      "nome": "wadawd",
-      "nota": "1"
-    },
-    {
-      "nome": "dwadaw",
-      "nota": "2"
-    },
-    {
-      "nome": "awd",
-      "nota": "2"
-    },
-    {
-      "nome": "awd",
-      "nota": "2"
-    },
-    {
-      "nome": "awd",
-      "nota": "2"
-    },
-    {
-      "nome": "awda",
-      "nota": "2"
-    },
-    {
-      "nome": "awda",
-      "nota": "2"
-    },
-    {
-      "nome": "css",
-      "nota": "1"
-    },
-    {
-
-      "nome": "ca",
-      "nota": "2"
-    },
-    {
-      "nome": "adw",
-      "nota": "2"
-    },
-    {
-      "nome": "erick",
-      "nota": "2"
-    },
-    {
-      "nome": "dwdad",
-      "nota": "1"
-    },
-    {
-      "nome": "cwdw",
-      "nota": "2"
-    },
-    {
-      "nome": "erick",
-      "nota": "2"
-    },
-    {
-      "nome": "css",
-      "nota": "4"
-    },
-    {
-      "nome": "c",
-      "nota": "3"
-    },
-    {
-      "nome": "css",
-      "nota": "3"
-    },
-    {
-      "nome": "css",
-      "nota": "3"
-    },
-    {
-      "nome": "css",
-      "nota": "3"
-    },
-    {
-      "nome": "css",
-      "nota": "4"
-    },
-    {
-      "nome": "gyyy",
-      "nota": "4"
-    },
-    {
-      "nome": "erick",
-      "nota": "33"
-    },
-    {
-      "nome": "erick",
-      "nota": "3"
-    },
-    {
-      "nome": "wew",
-      "nota": "3"
-    },
-    {
-      "nome": "323",
-      "nota": "1"
-    },
-    {
-      "nome": "erick",
-      "nota": "3"
-    },
-    {
-      "nome": "aaaaa",
-      "nota": "3"
+      "id": 8,
+      "nome": "awdawd",
+      "nota": "32323"
     }
   ]
 }

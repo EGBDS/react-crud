@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Tabela from './components/Tabela/Tabela';
 import Cadastro from './components/Cadastro/Cadastro';
-import AtualizarDeletar from './components/AtualizarDeletar/AtualizarDeletar';
 
 
 function App() {
@@ -16,14 +15,12 @@ function App() {
           <ul>
             <li><Link to="/">Tabela</Link></li>
             <li><Link to="/cadastro">Cadastro</Link></li>
-            <li><Link to="/atualizar_deletar">Atualizar ou Deletar</Link></li>
           </ul>
         </nav>
       </header>
       <Routes>
           <Route Component={ Tabela } path='/' exact/>
           <Route Component={ Cadastro } path='/cadastro' />
-          <Route Component={ AtualizarDeletar } path='/atualizar_deletar' />
         </Routes>
       <footer>
         <p>Desenvolvido por <a href='https://github.com/EGBDS' target='_blank'>EGBS</a></p>

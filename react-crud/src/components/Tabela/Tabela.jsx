@@ -18,17 +18,53 @@ const Tabela = () => {
       console.log(error)
     }
   }
-  const handleDelete = (id) => {
+  const Delete = (id) => {
 
     url.delete(`/alunos/`+id)
     .then(() => {
+      getdados();
       alert("Cadastro excluido com sucesso!");
     })
     .catch(()=> {
       alert("Não foi possivel excluir o cadastro, tente novamente por favor.");
     });
+    
+  };
 
-    getdados();
+  const Atualizar = (dados) => {
+
+    var tabela = document.getElementsByClassName(`tabela`)[0];
+    console.log(dados.id)
+    console.log(dados)
+      tabela.innerHTML = `<form method="post"  onSubmit={console.log("teste")}>
+                        <label htmlFor="nome">Nome: </label>
+                        <input type='text' id='nome' min="4" required placeholder='Nome do aluno' value=${dados.nome}></input>
+
+                        <label htmlFor="nota">Nota:</label>
+                        <input type='number' id="nota" min="1" required placeholder='Nota do aluno' value=${dados.nota}></input>
+                        <button type='submit' id="btn_atualizar">Atualizar</button>
+                        </form>`
+    var teste = document.getElementById("btn_atualizar")
+    teste.addEventListener("click", (e) => {
+      var nome = document.getElementById("nome");
+      var nota = document.getElementById("nota");
+
+      console.log(nome.value, nota.value, dados.id);
+      const atualizar = async() =>{
+        try{
+          url.put(`alunos/`+dados.id, {
+            nome: nome.value,
+            nota: nota.value
+          });
+          alert("Dados atualizados com sucesso!")
+        }
+        catch(error){
+          alert("Error: "+error)
+        }
+      }
+      atualizar();
+    });
+    
   };
 
   useEffect(() => {
@@ -37,7 +73,7 @@ const Tabela = () => {
 
   return (
     <main>
-      <table>
+      <table className='tabela'>
         <caption>Tabela</caption>
         <thead>
           <tr>
@@ -47,14 +83,14 @@ const Tabela = () => {
             <th>AÇÃO</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='dados'>
           {get && get.data.map((dados, id) =>(
             <tr key={id}>
               <td>{dados.id}</td>
               <td>{dados.nome}</td>
               <td>{dados.nota}</td>
-              <td><button onClick={()=> handleDelete(dados.id)}><img src={deleteIcon}></img></button></td>
-              <td><button><img src={editIcon}></img></button></td>
+              <td><button onClick={()=> Delete(dados.id)}><img src={deleteIcon}></img></button></td>
+              <td><button><img src={editIcon} onClick={() => Atualizar(dados)}></img></button></td>
             </tr>
           ))}
         </tbody>

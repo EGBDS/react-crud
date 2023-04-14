@@ -2,38 +2,18 @@
   "alunos": [
     {
       "id": 1,
-      "nome": "Joao",
-      "nota": 2
-    },
-    {
-      "id": 3,
-      "nome": "awdadaw",
-      "nota": "32"
-    },
-    {
-      "id": 4,
-      "nome": "efefefsef",
-      "nota": "2332"
-    },
-    {
-      "id": 5,
-      "nome": "awdad",
+      "nome": "awdwdaw",
       "nota": "3232"
     },
     {
-      "id": 6,
-      "nome": "awdawd",
-      "nota": "32323"
+      "nome": "erick",
+      "nota": "323232",
+      "id": 2
     },
     {
-      "id": 7,
-      "nome": "awdadadawdadaw",
-      "nota": "34423232"
-    },
-    {
-      "id": 8,
-      "nome": "awdawd",
-      "nota": "32323"
+      "id": 4,
+      "nome": "addwwdw",
+      "nota": "2222222"
     }
   ]
 }

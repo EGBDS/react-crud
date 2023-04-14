@@ -4,7 +4,6 @@ import url from '../axios';
 
 
 function Cadastro(){
-    
     const Cadastrar = async(e) =>{
        try{
             e.preventDefault();
@@ -15,7 +14,8 @@ function Cadastro(){
                 id: "",
                 nome: `${nome.value}`,
                 nota: `${nota.value}`
-            });
+            }); 
+            
 
             nome.value = '';
             nota.value = '';

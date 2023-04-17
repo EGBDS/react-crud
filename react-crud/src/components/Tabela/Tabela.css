@@ -1,0 +1,46 @@
+main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+}
+
+table {
+    border-spacing: 0;
+}
+
+caption {
+    border: 1px solid;
+    height: 30px;
+}
+
+caption  > h2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0, 255, 0, 0.411);
+    max-height: 10px;
+    border: 1px solid black;
+}
+
+th:nth-child(4) {
+    display: flex;
+    margin: 0;
+    float: left;
+    width: 184%;
+    min-height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+td {
+    max-height: 10px;
+    border: 1px solid black;
+}

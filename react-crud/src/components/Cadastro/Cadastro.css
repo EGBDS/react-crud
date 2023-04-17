@@ -1,0 +1,18 @@
+.cadastro > form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: wheat;
+}
+
+label {
+    margin: 0 0 4rem 0;
+}
+
+#nome, #nota {
+    height: 40px;
+    width: 100%;
+}

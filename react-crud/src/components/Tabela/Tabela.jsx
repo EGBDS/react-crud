@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import url from '../axios';
 import axios from 'axios';
+import './Tabela.css';
 
 import deleteIcon from '../../assets/delete_black_24dp.png';
 import editIcon from '../../assets/edit_black_24dp.png';
@@ -74,7 +75,7 @@ const Tabela = () => {
   return (
     <main>
       <table className='tabela'>
-        <caption>Tabela</caption>
+        <caption><h2>Tabela</h2></caption>
         <thead>
           <tr>
             <th>ID</th>

@@ -18,10 +18,12 @@ function App() {
           </ul>
         </nav>
       </header>
+      <main>
       <Routes>
           <Route Component={ Tabela } path='/' exact/>
           <Route Component={ Cadastro } path='/cadastro' />
-        </Routes>
+      </Routes>
+      </main>
       <footer>
         <p>Desenvolvido por <a href='https://github.com/EGBDS' target='_blank'>EGBS</a></p>
       </footer>

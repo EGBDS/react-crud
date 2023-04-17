@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;   
+}
+
+header, footer{
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    margin: 20px;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}

@@ -36,17 +36,20 @@ const Tabela = () => {
 
     var tabela = document.getElementsByClassName(`tabela`)[0];
     console.log(dados.id)
-    console.log(dados)
+    console.log(tabela)
       tabela.innerHTML = `<form method="post"  onSubmit={console.log("teste")}>
-                        <label htmlFor="nome">Nome: </label>
-                        <input type='text' id='nome' min="4" required placeholder='Nome do aluno' value=${dados.nome}></input>
+                        <div id="teste">
+                        <label htmlFor="nome">Nome: <input type='text' id='nome' min="4" required placeholder='Nome do aluno' value=${dados.nome}></input></label>
+                        
 
-                        <label htmlFor="nota">Nota:</label>
-                        <input type='number' id="nota" min="1" required placeholder='Nota do aluno' value=${dados.nota}></input>
+                        <label htmlFor="nota">Nota: <input type='number' id="nota" min="1" required placeholder='Nota do aluno' value=${dados.nota}></input></label>
+
                         <button type='submit' id="btn_atualizar">Atualizar</button>
+                        </div>
                         </form>`
-    var teste = document.getElementById("btn_atualizar")
-    teste.addEventListener("click", (e) => {
+
+    var btn_atualizar = document.getElementById("btn_atualizar")
+    btn_atualizar.addEventListener("click", (e) => {
       var nome = document.getElementById("nome");
       var nota = document.getElementById("nota");
 
@@ -63,7 +66,8 @@ const Tabela = () => {
           alert("Error: "+error)
         }
       }
-      atualizar();
+      atualizar();//chama a constante atualizar declarada logo acima
+      window.location.reload(true);//Reload na página
     });
     
   };
@@ -73,7 +77,7 @@ const Tabela = () => {
   },[]);
 
   return (
-    <main>
+    <main className='main'>
       <table className='tabela'>
         <caption><h2>Tabela</h2></caption>
         <thead>
